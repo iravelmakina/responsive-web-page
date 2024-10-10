@@ -5,18 +5,33 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    font-size: 16px;
 }
 
-header {
+header, .company-symbolics {
     display: flex;
-    padding: 29.5px 81px;
     justify-content: space-between;
     align-items: center;
 }
 
-header image {
+header {
+    padding: 29.5px 81px;
+}
+
+.company-symbolics {
     width: 175px;
-    height: 50px;
+}
+
+.company-symbolics h2 {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+    margin: 0;
+}
+
+header .company-symbolics h2 {
+    color: #333333;
 }
 
 header ul {
@@ -35,51 +50,68 @@ header ul li a {
     color: #333333;
 }
 
+header ul li a:hover {
+    color: #0077FF;
+}
+
 .about {
     max-width: 1277px;
     display: grid;
-    margin: 0 auto;
     grid-template-columns: 1fr 0.886fr;
-    grid-template-rows: 3.214fr 1fr;
-    padding: 0 0 70px;
+    padding: 83.5px 82px;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .about img {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 1;
     width: 553px;
+    box-sizing: border-box;
     border-radius: 50%;
     border: 1px solid #F2F2F2;
+    justify-self: center;
+    align-self: center;
 }
 
-.about h1 {
+.about .intro {
+    max-width: 624px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about .intro .self-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #222222;
+}
+
+.about .intro .self-description h1 {
     font-size: 60px;
     font-weight: 700;
-    order: 1;
-    grid-column-start: 1;
-    color: #222222;
     max-width: 544.39px;
     margin: 0;
 }
 
-.about span {
+.about .self-description span {
     color: #0077FF;
+    font-size: 70px;
 }
 
-.about p {
+.about .self-description p {
     font-size: 25px;
-    color: #222222;
-    order: 3;
     max-width: 544.39px;
+    margin: 0;
 }
 
 .about a {
-    order: 4;
     grid-column-start: 1;
     background: #0077FF;
-    padding: 13.5px 39.65px;
+    padding: 13.5px 0;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 600;
@@ -87,35 +119,155 @@ header ul li a {
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
-    box-sizing: border-box;
+}
+
+.about a:hover {
+    background: #222222;
 }
 
 .milestones {
     background: #0077FF;
+    padding: 100px 0;
 }
 
 .milestones hgroup {
-    margin: 100px 378px 60px;
-    color: #FFFFFF;
-    font-weight: 700;
+    margin: 0 378px 60px;
 }
 
 .milestones h2 {
+    color: #E9EFFF;
     font-size: 20px;
+    font-weight: 600;
     text-transform: uppercase;
-    margin: 0;
     text-align: center;
+    margin: 0;
 }
 
 .milestones h3 {
+    color: #FFFFFF;
     font-size: 50px;
+    font-weight: 700;
+    text-align: center;
     margin: 0;
+}
+
+.milestones .figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 50px 244.5px;
+}
+
+.figure {
+    background: #FFFFFF;
+    color: #333333;
+    border-radius: 15px;
+    padding: 30px 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     text-align: center;
 }
 
-.milestones figures {
-    display: flex;
-    justify-content: center;
-    
+.figure .number {
+    font-weight: 700;
+    font-size: 50px;
 }
 
+.figure .text {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.testimonials {
+    background: #FFFFFF;
+    padding: 100px 244.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.testimonials hgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #0078FF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.testimonials h3 {
+    color: #222222;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.testimonials .testimonials-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.testimonials article {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 1px solid #DDDDDD;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: #000000;
+    font-size: 16px;
+}
+
+.testimonials article p {
+    font-weight: 400;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.testimonials article .meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.testimonials article .meta .name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.testimonials article .meta .position {
+    color: #666666;;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer {
+    padding: 50px 81px;
+    background: #0077FF;
+}
+
+footer .footer-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-body p {
+    color: #DDEDFF;
+    font-weight: 400;
+}
+
+footer .company-symbolics h2 {
+    color: #FFFFFF;
+}
