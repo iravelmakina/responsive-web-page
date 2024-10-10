@@ -35,7 +35,6 @@ header .company-symbolics h2 {
 }
 
 header ul {
-    padding: 0 0 0 471px;
     margin: 0;
     list-style: none;
     display: flex;
@@ -58,7 +57,7 @@ header ul li a:hover {
     max-width: 1277px;
     display: grid;
     grid-template-columns: 1fr 0.886fr;
-    padding: 83.5px 82px;
+    padding: 83.5px 5%;
     margin: 0 auto;
     align-items: center;
 }
@@ -68,7 +67,7 @@ header ul li a:hover {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
-    width: 553px;
+    width: 100%;
     box-sizing: border-box;
     border-radius: 50%;
     border: 1px solid #F2F2F2;
@@ -128,10 +127,18 @@ header ul li a:hover {
 .milestones {
     background: #0077FF;
     padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .milestones hgroup {
-    margin: 0 378px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 45%;
 }
 
 .milestones h2 {
@@ -238,6 +245,7 @@ header ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    text-align: center;
 
 }
 
@@ -249,7 +257,6 @@ header ul li a:hover {
 .testimonials article .meta .position {
     color: #666666;;
     font-weight: 400;
-    text-align: center;
 }
 
 footer {
@@ -270,4 +277,42 @@ footer .footer-body {
 
 footer .company-symbolics h2 {
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1160px) {
+    header {
+        padding: 29.5px 5%;
+    }
+    .about {
+        padding-top: 5%;
+    }
+
+    .about .intro {
+        gap: 20px;
+    }
+
+    .about .intro .self-description p {
+        padding-right: 15px;
+    }
+
+    .about .intro .self-description h1, .about .intro .self-description h1 span {
+        font-size: 40px;
+    }
+
+    .about a {
+        max-width: 80%;
+    }
+
+    .milestones {
+        padding: 5% 0;
+        gap: 5%;
+    }
+
+    .milestones .figures {
+        padding: 50px 10%;
+    }
+
+    .testimonials {
+        padding: 5% 3%;
+    }
 }
