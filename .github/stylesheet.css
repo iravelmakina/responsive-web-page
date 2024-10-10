@@ -19,7 +19,8 @@ header {
 }
 
 .company-symbolics {
-    width: 175px;
+    gap: 6px;
+    max-width: 175px;
 }
 
 .company-symbolics h2 {
@@ -34,7 +35,7 @@ header .company-symbolics h2 {
     color: #333333;
 }
 
-header ul {
+header nav ul {
     margin: 0;
     list-style: none;
     display: flex;
@@ -43,13 +44,13 @@ header ul {
     justify-content: end;
 }
 
-header ul li a {
+header nav ul li a {
     text-decoration: none;
     font-weight: 600;
     color: #333333;
 }
 
-header ul li a:hover {
+header nav ul li a:hover {
     color: #0077FF;
 }
 
@@ -96,18 +97,20 @@ header ul li a:hover {
     margin: 0;
 }
 
-.about .self-description span {
+.about .intro .self-description span {
     color: #0077FF;
+    font-weight: 700;
     font-size: 70px;
 }
 
-.about .self-description p {
+.about .intro .self-description p {
     font-size: 25px;
+    font-weight: 400;
     max-width: 544.39px;
     margin: 0;
 }
 
-.about a {
+.about .intro a {
     grid-column-start: 1;
     background: #0077FF;
     padding: 13.5px 0;
@@ -120,7 +123,7 @@ header ul li a:hover {
     border-radius: 50px;
 }
 
-.about a:hover {
+.about .intro a:hover {
     background: #222222;
 }
 
@@ -141,7 +144,7 @@ header ul li a:hover {
     max-width: 45%;
 }
 
-.milestones h2 {
+.milestones hgroup h2 {
     color: #E9EFFF;
     font-size: 20px;
     font-weight: 600;
@@ -150,7 +153,7 @@ header ul li a:hover {
     margin: 0;
 }
 
-.milestones h3 {
+.milestones hgroup h3 {
     color: #FFFFFF;
     font-size: 50px;
     font-weight: 700;
@@ -165,7 +168,7 @@ header ul li a:hover {
     padding: 50px 244.5px;
 }
 
-.figure {
+.milestones .figures .figure {
     background: #FFFFFF;
     color: #333333;
     border-radius: 15px;
@@ -176,12 +179,12 @@ header ul li a:hover {
     text-align: center;
 }
 
-.figure .number {
+.milestones .figure .number {
     font-weight: 700;
     font-size: 50px;
 }
 
-.figure .text {
+.milestones .figure .text {
     font-weight: 600;
     font-size: 20px;
 }
@@ -201,7 +204,7 @@ header ul li a:hover {
     text-align: center;
 }
 
-.testimonials h2 {
+.testimonials hgroup h2 {
     color: #0078FF;
     font-size: 20px;
     font-weight: 600;
@@ -209,7 +212,7 @@ header ul li a:hover {
     margin: 0;
 }
 
-.testimonials h3 {
+.testimonials hgroup h3 {
     color: #222222;
     font-size: 50px;
     font-weight: 700;
@@ -222,7 +225,7 @@ header ul li a:hover {
     gap: 30px;
 }
 
-.testimonials article {
+.testimonials .testimonials-content article {
     padding: 30px 20px;
     box-sizing: border-box;
     border: 1px solid #DDDDDD;
@@ -235,13 +238,18 @@ header ul li a:hover {
     font-size: 16px;
 }
 
-.testimonials article p {
+.testimonials .testimonials-content article .star-rating {
+    display: none;
+}
+
+
+.testimonials .testimonials-content article p {
     font-weight: 400;
     padding-right: 10px;
     margin: 0;
 }
 
-.testimonials article .meta {
+.testimonials .testimonials-content article .meta {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -249,12 +257,12 @@ header ul li a:hover {
 
 }
 
-.testimonials article .meta .name {
+.testimonials .testimonials-content article .meta .name {
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.testimonials article .meta .position {
+.testimonials .testimonials-content article .meta .position {
     color: #666666;;
     font-weight: 400;
 }
@@ -283,6 +291,7 @@ footer .company-symbolics h2 {
     header {
         padding: 29.5px 5%;
     }
+
     .about {
         padding-top: 5%;
     }
@@ -296,7 +305,7 @@ footer .company-symbolics h2 {
     }
 
     .about .intro .self-description h1, .about .intro .self-description h1 span {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .about a {
@@ -314,5 +323,126 @@ footer .company-symbolics h2 {
 
     .testimonials {
         padding: 5% 3%;
+    }
+
+    @media screen and (max-width: 660px) {
+        header {
+            padding: 13.5px 20px;
+        }
+
+        header nav ul {
+            padding-left: 0;
+            font-size: 16px;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        header .company-symbolics h2 {
+            display: none;
+        }
+
+        header .company-symbolics img {
+            max-width: 30px;
+        }
+
+        .about {
+            grid-template-columns: 1fr;
+            padding: 30px 10px 51px 10px;
+            gap: 15px;
+        }
+
+        .about img {
+            grid-column-start: 1;
+        }
+
+        .about .intro {
+            gap: 30px;
+            align-items: center;
+            padding-bottom: 30px;
+        }
+
+        .about .intro .self-description {
+            gap: 15px;
+        }
+
+        .about .intro .self-description {
+            text-align: center;
+        }
+
+        .about .intro .self-description h1 {
+            font-size: 50px;
+        }
+
+        .about .intro .self-description h1 span {
+            font-size: 50px;
+        }
+
+        .about .intro .self-description p {
+            font-size: 20px;
+        }
+
+        .about .intro a {
+            flex: auto;
+            width: 100%;
+            max-width: 95%;
+        }
+
+        .milestones {
+            padding-bottom: 0;
+        }
+
+        .milestones hgroup {
+            gap: 15px;
+            max-width: 95%;
+        }
+
+        .milestones hgroup h2 {
+            font-size: 18px;
+        }
+
+        .milestones hgroup h3 {
+            font-size: 40px;
+        }
+
+        .milestones .figures {
+            grid-template-columns: 1fr;
+        }
+
+        .testimonials hgroup {
+            gap: 15px;
+        }
+
+        .testimonials hgroup h2 {
+            font-size: 18px;
+        }
+
+        .testimonials hgroup h3 {
+            font-size: 40px;
+        }
+
+        .testimonials .testimonials-content {
+            grid-template-columns: 1fr;
+        }
+
+        .testimonials .testimonials-content article .star-rating {
+            display: flex;
+            gap: 5px;
+        }
+
+        footer .footer-body {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        footer .footer-body .company-symbolics h2 {
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        footer .footer-body p {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+        }
     }
 }
