@@ -37,10 +37,19 @@ creating-responsive-web-page-iravelmakina/
 
 ## Screenshots
 
-<div align="center">
-    <img width="1512" alt="Screenshot 2025-04-23 at 13 40 48" src="https://github.com/user-attachments/assets/769eed30-5eac-4b3c-9072-6c2cf4c0e204" />
-    <img width="861" alt="Screenshot 2025-04-23 at 13 42 38" src="https://github.com/user-attachments/assets/73dafd86-5a0e-407b-9adf-f04cb9c897a1" />
-    <img width="575" alt="Screenshot 2025-04-23 at 13 42 58" src="https://github.com/user-attachments/assets/7a6ec009-0c31-450a-886e-ed9c415fff80" />
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
+    <div style="text-align: center;">
+        <p>Desktop</p>
+        <img width="500" alt="Desktop" src="https://github.com/user-attachments/assets/769eed30-5eac-4b3c-9072-6c2cf4c0e204" />
+    </div>
+    <div style="text-align: center;">
+        <p>Tablet</p>
+        <img width="400" alt="Tablet" src="https://github.com/user-attachments/assets/73dafd86-5a0e-407b-9adf-f04cb9c897a1" />
+    </div>
+    <div style="text-align: center;">
+        <p>Mobile</p>
+        <img width="300" alt="Mobile" src="https://github.com/user-attachments/assets/7a6ec009-0c31-450a-886e-ed9c415fff80" />
+    </div>
 </div>
 
 ---
