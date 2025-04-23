@@ -135,7 +135,7 @@ header nav ul li a:hover {
     gap: 60px;
 }
 
-.milestones hgroup {
+.milestones .heading {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -144,7 +144,7 @@ header nav ul li a:hover {
     max-width: 45%;
 }
 
-.milestones hgroup h2 {
+.milestones .heading h2 {
     color: #E9EFFF;
     font-size: 20px;
     font-weight: 600;
@@ -153,7 +153,7 @@ header nav ul li a:hover {
     margin: 0;
 }
 
-.milestones hgroup h3 {
+.milestones .heading h3 {
     color: #FFFFFF;
     font-size: 50px;
     font-weight: 700;
@@ -197,14 +197,14 @@ header nav ul li a:hover {
     gap: 50px;
 }
 
-.testimonials hgroup {
+.testimonials .heading {
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: center;
 }
 
-.testimonials hgroup h2 {
+.testimonials .heading h2 {
     color: #0078FF;
     font-size: 20px;
     font-weight: 600;
@@ -212,7 +212,7 @@ header nav ul li a:hover {
     margin: 0;
 }
 
-.testimonials hgroup h3 {
+.testimonials .heading h3 {
     color: #222222;
     font-size: 50px;
     font-weight: 700;
@@ -391,16 +391,16 @@ footer .company-symbolics h2 {
             padding-bottom: 0;
         }
 
-        .milestones hgroup {
+        .milestones .heading {
             gap: 15px;
             max-width: 95%;
         }
 
-        .milestones hgroup h2 {
+        .milestones .heading h2 {
             font-size: 18px;
         }
 
-        .milestones hgroup h3 {
+        .milestones .heading h3 {
             font-size: 40px;
         }
 
@@ -408,15 +408,15 @@ footer .company-symbolics h2 {
             grid-template-columns: 1fr;
         }
 
-        .testimonials hgroup {
+        .testimonials .heading {
             gap: 15px;
         }
 
-        .testimonials hgroup h2 {
+        .testimonials .heading h2 {
             font-size: 18px;
         }
 
-        .testimonials hgroup h3 {
+        .testimonials .heading h3 {
             font-size: 40px;
         }
 
