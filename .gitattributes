@@ -1,0 +1,34 @@
+# Normalize all text-based files to LF (Unix-style)
+* text=auto eol=lf
+
+# --- HTML ---
+*.html      text
+
+# --- CSS ---
+*.css       text
+
+# --- JavaScript (if applicable) ---
+*.js        text
+
+# --- Markdown / Documentation ---
+*.md        text
+
+# --- Image files (binary) ---
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.svg       text       # Can be diffed and edited
+*.ico       binary
+*.webp      binary
+
+# --- Fonts (if used) ---
+*.woff      binary
+*.woff2     binary
+*.ttf       binary
+*.eot       binary
+
+# --- Misc ---
+*.txt       text
+*.json      text
+*.xml       text
