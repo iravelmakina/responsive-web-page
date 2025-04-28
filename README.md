@@ -16,7 +16,7 @@ This project is a modern, responsive personal landing page. It’s designed with
 
 ---
 
-## Folder Structure
+## Project Structure
 
 ```
 creating-responsive-web-page-iravelmakina/
@@ -63,7 +63,6 @@ creating-responsive-web-page-iravelmakina/
 ```bash
 git clone https://github.com/iravelmakina/responsive-web-page.git
 cd responsive-web-page
-open index.html
 ```
 
 ---
